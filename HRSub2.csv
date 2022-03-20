@@ -1,0 +1,311 @@
+"MarriedID","MaritalDesc","Sex","EmploymentStatus","Department","PerfScoreID","RecruitmentSource","Salary","Position","State","Age","CitizenDesc","RaceDesc","HispanicLatino","EmployedYear","ManagerName","EngagementSurvey","EmpSatisfaction","SpecialProjectsCount","DaysLateLast30","Absences"
+0,"Single","M","Active","Production",4,"LinkedIn",62506,"Production Technician I","MA",38,"US Citizen","White","No",10,"Michael Albert",4.6,5,0,0,1
+1,"Married","M","Voluntarily Terminated","IT/IS",3,"Indeed",104437,"Sr. DBA","MA",46,"US Citizen","White","No",1,"Simon Roup",4.96,3,6,0,17
+1,"Married","F","Voluntarily Terminated","Production",3,"LinkedIn",64955,"Production Technician II","MA",33,"US Citizen","White","No",1,"Kissy Sullivan",3.02,3,0,0,3
+1,"Married","F","Active","Production",3,"Indeed",64991,"Production Technician I","MA",33,"US Citizen","White","No",13,"Elijiah Gray",4.84,5,0,0,15
+0,"Divorced","F","Voluntarily Terminated","Production",3,"Google Search",50825,"Production Technician I","MA",32,"US Citizen","White","No",5,"Webster Butler",5,4,0,0,2
+0,"Single","F","Active","Production",4,"LinkedIn",57568,"Production Technician I","MA",44,"US Citizen","White","No",9,"Amy Dunn",5,5,0,0,15
+0,"Single","F","Active","Software Engineering",3,"LinkedIn",95660,"Software Engineer","MA",42,"US Citizen","White","No",7,"Alex Sweetwater",3.04,3,4,0,19
+0,"Widowed","M","Active","Production",3,"Employee Referral",59365,"Production Technician I","MA",38,"US Citizen","White","No",8,"Ketsia Liebig",5,4,0,0,19
+0,"Single","F","Active","Production",3,"Diversity Job Fair",47837,"Production Technician I","MA",51,"US Citizen","Black or African American","No",12,"Brannon Miller",4.46,3,0,0,4
+0,"Divorced","M","Active","IT/IS",3,"Indeed",50178,"IT Support","MA",33,"US Citizen","White","No",6,"Peter Monroe",5,5,6,0,16
+1,"Married","F","Voluntarily Terminated","Production",3,"Diversity Job Fair",54670,"Production Technician I","MA",47,"US Citizen","Black or African American","Yes",6,"David Stanley",4.2,4,0,0,12
+1,"Married","M","Voluntarily Terminated","Production",3,"Diversity Job Fair",47211,"Production Technician I","MA",47,"US Citizen","Black or African American","Yes",4,"Kissy Sullivan",4.2,3,0,0,15
+0,"Divorced","M","Active","IT/IS",4,"Diversity Job Fair",92328,"Data Analyst","TX",33,"US Citizen","Black or African American","No",7,"Simon Roup",4.28,4,5,0,9
+0,"Single","M","Active","Production",3,"Google Search",58709,"Production Technician I","MA",38,"US Citizen","Two or more races","No",9,"Kelley Spirea",4.6,4,0,0,7
+0,"Divorced","M","Voluntarily Terminated","Production",3,"On-line Web application",52505,"Production Technician I","MA",44,"US Citizen","White","No",5,"Michael Albert",5,5,0,0,1
+0,"Single","M","Terminated for Cause","Production",3,"Google Search",57834,"Production Technician I","MA",40,"US Citizen","White","No",6,"Kelley Spirea",5,4,0,0,20
+1,"Married","F","Active","Production",4,"Employee Referral",70131,"Production Technician II","MA",55,"US Citizen","White","No",5,"Kelley Spirea",4.4,3,0,0,16
+0,"Single","F","Active","Production",3,"Google Search",59026,"Production Technician I","MA",51,"Eligible NonCitizen","White","No",10,"Elijiah Gray",5,5,0,0,12
+0,"Single","F","Terminated for Cause","IT/IS",3,"Google Search",110000,"Database Administrator","MA",35,"US Citizen","White","Yes",1,"Simon Roup",4.5,4,5,0,8
+0,"Single","M","Active","Production",3,"LinkedIn",53250,"Production Technician I","MA",42,"US Citizen","Asian","No",8,"Webster Butler",4.2,4,0,0,13
+0,"Single","M","Active","Production",3,"Google Search",51044,"Production Technician I","MA",51,"US Citizen","White","Yes",9,"Amy Dunn",5,3,0,0,13
+0,"Divorced","F","Active","Production",3,"Indeed",64919,"Production Technician I","MA",63,"US Citizen","Asian","No",8,"Ketsia Liebig",4.2,3,0,0,2
+1,"Married","F","Active","Production",4,"Indeed",62910,"Production Technician I","MA",32,"US Citizen","White","No",7,"Brannon Miller",5,3,0,0,19
+0,"Single","F","Active","Production",2,"CareerBuilder",66441,"Production Technician II","MA",31,"US Citizen","White","No",10,"Michael Albert",2,3,0,2,3
+0,"Single","F","Voluntarily Terminated","Production",3,"Google Search",57815,"Production Technician II","MA",54,"US Citizen","White","No",3,"Elijiah Gray",4.8,5,0,0,5
+0,"Single","M","Terminated for Cause","IT/IS",3,"LinkedIn",103613,"Enterprise Architect","CT",57,"US Citizen","Black or African American","No",2,"Simon Roup",3.5,5,7,0,2
+1,"Married","F","Active","Admin Offices",3,"Diversity Job Fair",106367,"Sr. Accountant","MA",34,"US Citizen","Black or African American","No",6,"Brandon R. LeBlanc",5,4,3,0,4
+0,"Single","M","Voluntarily Terminated","Production",3,"Indeed",74312,"Production Manager","MA",51,"US Citizen","Asian","No",1,"Janet King",3.39,3,0,0,14
+1,"Married","F","Voluntarily Terminated","Production",3,"Google Search",53492,"Production Technician I","MA",31,"US Citizen","White","No",1,"David Stanley",3.35,4,0,0,6
+1,"Married","F","Active","Admin Offices",3,"Diversity Job Fair",63000,"Accountant I","MA",34,"US Citizen","Black or African American","No",13,"Brandon R. LeBlanc",4.5,2,6,0,14
+0,"Single","M","Active","Production",3,"Google Search",65288,"Production Technician II","MA",38,"US Citizen","White","No",7,"Webster Butler",3.19,3,0,0,9
+0,"Separated","F","Active","Production",3,"Diversity Job Fair",64375,"Production Technician I","MA",52,"US Citizen","Black or African American","No",8,"Kissy Sullivan",3.5,5,0,0,17
+1,"Married","F","Voluntarily Terminated","Sales",3,"Google Search",74326,"Area Sales Manager","VA",57,"Eligible NonCitizen","Black or African American","No",3,"John Smith",3.14,5,0,1,19
+0,"Single","F","Active","Production",3,"Employee Referral",63763,"Production Technician II","MA",41,"US Citizen","Black or African American","No",9,"Amy Dunn",4.51,4,0,0,3
+1,"Married","M","Active","Production",3,"Indeed",62162,"Production Technician II","MA",44,"US Citizen","White","No",10,"Ketsia Liebig",3.25,5,0,0,15
+0,"Single","M","Active","Software Engineering",3,"Google Search",77692,"Software Engineering Manager","MA",55,"US Citizen","White","No",10,"Jennifer Zamora",3.84,3,5,0,4
+0,"Single","M","Active","Production",4,"Indeed",72640,"Production Manager","MA",38,"US Citizen","White","No",5,"Janet King",5,3,0,0,14
+0,"Single","F","Active","Software Engineering",3,"Indeed",93396,"Software Engineer","MA",34,"US Citizen","White","No",8,"Alex Sweetwater",4.96,4,6,0,3
+0,"Single","M","Active","Production",3,"LinkedIn",52846,"Production Technician I","MA",38,"US Citizen","Black or African American","No",7,"Kelley Spirea",4.43,3,0,0,14
+0,"Single","F","Active","IT/IS",3,"LinkedIn",100031,"Sr. DBA","MA",35,"US Citizen","Black or African American","No",5,"Simon Roup",5,5,6,0,7
+0,"Single","F","Active","Sales",3,"Indeed",71860,"Area Sales Manager","VT",58,"US Citizen","White","No",7,"John Smith",5,5,0,0,7
+0,"Single","F","Active","Production",3,"Google Search",61656,"Production Technician I","MA",70,"US Citizen","White","No",7,"Michael Albert",5,4,0,0,11
+1,"Married","M","Active","IT/IS",3,"Indeed",110929,"BI Director","MA",49,"US Citizen","White","No",5,"Jennifer Zamora",4.5,5,7,0,8
+0,"Single","F","Active","Production",3,"Indeed",54237,"Production Technician I","MA",42,"US Citizen","White","No",7,"Elijiah Gray",3.3,4,0,0,11
+0,"Single","M","Active","Production",3,"LinkedIn",60380,"Production Technician I","MA",38,"US Citizen","White","No",8,"Webster Butler",3.8,5,0,0,4
+0,"Single","M","Active","Sales",3,"Employee Referral",66808,"Area Sales Manager","TX",51,"Eligible NonCitizen","Black or African American","No",9,"Lynn Daneault",3,5,0,0,17
+0,"Single","F","Voluntarily Terminated","Production",3,"Indeed",64786,"Production Technician I","MA",38,"US Citizen","White","No",4,"Amy Dunn",4.3,4,0,0,3
+0,"Single","F","Active","Production",3,"Indeed",64816,"Production Technician I","MA",33,"Non-Citizen","Black or African American","No",10,"Ketsia Liebig",3.58,5,0,0,3
+0,"Single","M","Active","IT/IS",3,"Indeed",68678,"IT Support","MA",36,"US Citizen","White","No",9,"Eric Dougall",4.7,3,6,0,2
+1,"Married","F","Voluntarily Terminated","Production",3,"Google Search",64066,"Production Technician II","MA",40,"US Citizen","White","No",2,"Brannon Miller",4.2,5,0,0,9
+1,"Married","M","Voluntarily Terminated","Production",3,"Indeed",59369,"Production Technician II","MA",43,"US Citizen","White","No",1,"David Stanley",4.2,4,0,0,6
+1,"Married","M","Active","Production",4,"Employee Referral",50373,"Production Technician I","MA",41,"US Citizen","White","No",5,"Brannon Miller",4.1,4,0,0,5
+0,"Single","M","Active","Production",3,"Employee Referral",63108,"Production Technician I","MA",44,"US Citizen","White","No",8,"David Stanley",4.4,5,0,0,3
+0,"Single","M","Terminated for Cause","Production",2,"LinkedIn",59144,"Production Technician I","MA",42,"US Citizen","Black or African American","No",5,"Kissy Sullivan",2,3,0,5,16
+0,"Divorced","M","Active","Production",2,"CareerBuilder",68051,"Production Manager","MA",46,"US Citizen","White","No",11,"Janet King",4.13,2,0,3,3
+0,"Single","M","Active","Production",4,"Indeed",170500,"Director of Operations","MA",38,"US Citizen","Black or African American","No",12,"Janet King",3.7,5,0,0,15
+1,"Married","F","Active","Production",3,"Indeed",63381,"Production Technician I","MA",44,"US Citizen","White","Yes",6,"Kelley Spirea",4.73,5,0,0,6
+1,"Married","M","Active","IT/IS",3,"Indeed",83552,"Data Analyst","MA",35,"US Citizen","White","No",6,"Simon Roup",3.04,3,6,0,2
+0,"Single","F","Active","Production",3,"LinkedIn",56149,"Production Technician I","MA",34,"US Citizen","White","No",5,"Michael Albert",4.12,5,0,0,15
+0,"Single","M","Active","IT/IS",3,"Employee Referral",92329,"Sr. Network Engineer","CT",56,"US Citizen","White","No",7,"Peter Monroe",5,3,4,0,5
+0,"Single","F","Active","Sales",3,"Indeed",65729,"Sales Manager","VT",31,"US Citizen","White","No",7,"Debra Houlihan",4.62,4,0,0,8
+1,"Married","F","Active","IT/IS",3,"LinkedIn",85028,"Sr. Network Engineer","CT",69,"US Citizen","White","No",7,"Peter Monroe",3.1,5,8,0,19
+1,"Married","F","Active","Production",3,"Indeed",57583,"Production Technician I","MA",43,"US Citizen","White","No",9,"Elijiah Gray",5,3,0,0,1
+0,"Single","M","Active","Production",3,"LinkedIn",56294,"Production Technician II","MA",42,"Eligible NonCitizen","Two or more races","No",10,"Kissy Sullivan",3.96,4,0,0,6
+1,"Married","M","Active","Production",1,"Indeed",56991,"Production Technician I","MA",33,"US Citizen","White","No",3,"Brannon Miller",4.3,4,3,2,2
+1,"Married","M","Voluntarily Terminated","Production",3,"Indeed",55722,"Production Technician I","MA",44,"US Citizen","White","No",5,"Webster Butler",5,4,0,0,14
+0,"Single","F","Active","Software Engineering",3,"CareerBuilder",101199,"Software Engineer","MA",42,"US Citizen","Black or African American","No",9,"Alex Sweetwater",3.79,5,5,0,8
+0,"Single","M","Active","Sales",1,"Indeed",61568,"Area Sales Manager","AL",46,"US Citizen","Two or more races","No",7,"John Smith",1.93,3,0,6,5
+0,"Separated","F","Voluntarily Terminated","Production",3,"Google Search",58275,"Production Technician II","MA",70,"US Citizen","Black or African American","No",4,"Kelley Spirea",4.62,5,0,0,1
+1,"Married","M","Active","Production",1,"Indeed",53189,"Production Technician I","MA",54,"US Citizen","White","No",7,"Amy Dunn",1.12,2,0,4,9
+0,"Single","M","Active","IT/IS",3,"Indeed",96820,"BI Developer","MA",38,"US Citizen","White","No",4,"Brian Champaigne",3.01,5,7,0,15
+0,"Single","M","Active","Production",3,"Indeed",51259,"Production Technician I","MA",39,"US Citizen","White","No",7,"Ketsia Liebig",4.3,4,0,0,1
+0,"Single","F","Active","Sales",1,"Website",59231,"Area Sales Manager","WA",34,"US Citizen","White","Yes",9,"John Smith",2.3,1,0,2,17
+1,"Married","F","Active","Production",2,"Indeed",61584,"Production Technician I","MA",43,"US Citizen","Black or African American","No",8,"Brannon Miller",3.88,4,0,0,6
+0,"Single","F","Active","Production",3,"CareerBuilder",46335,"Production Technician I","MA",35,"US Citizen","White","Yes",9,"David Stanley",3.4,5,0,0,15
+1,"Married","F","Active","IT/IS",3,"Employee Referral",70621,"IT Support","MA",33,"US Citizen","White","No",6,"Peter Monroe",4.11,4,6,0,16
+0,"Single","M","Active","IT/IS",4,"Indeed",138888,"IT Manager - Support","MA",51,"US Citizen","Black or African American","No",7,"Jennifer Zamora",4.3,5,5,0,4
+0,"Single","F","Active","Sales",4,"Indeed",74241,"Area Sales Manager","CA",33,"US Citizen","White","No",10,"Lynn Daneault",4.77,5,0,0,14
+0,"Single","F","Active","Production",3,"Google Search",75188,"Production Manager","MA",48,"US Citizen","White","No",7,"Janet King",4.52,4,0,0,4
+1,"Married","F","Active","Production",3,"Google Search",62514,"Production Technician I","MA",48,"US Citizen","White","No",11,"Ketsia Liebig",2.9,3,0,0,6
+1,"Married","F","Voluntarily Terminated","Production",3,"Google Search",60070,"Production Technician I","MA",30,"US Citizen","White","No",6,"Kissy Sullivan",5,3,0,0,7
+0,"Single","M","Active","Production",3,"LinkedIn",48888,"Production Technician I","MA",47,"US Citizen","White","No",7,"Kelley Spirea",4.7,5,0,0,8
+1,"Married","M","Active","Production",3,"Employee Referral",54285,"Production Technician I","MA",43,"US Citizen","White","No",7,"Kelley Spirea",4.2,3,0,0,3
+0,"Separated","F","Active","Production",1,"Indeed",56847,"Production Technician II","MA",32,"US Citizen","White","No",7,"Michael Albert",3,1,0,2,5
+0,"Single","M","Terminated for Cause","Production",2,"Google Search",60340,"Production Technician I","MA",38,"US Citizen","White","No",6,"Michael Albert",5,4,0,5,16
+0,"Single","F","Terminated for Cause","Production",2,"Google Search",59124,"Production Technician I","MA",32,"US Citizen","White","No",4,"Elijiah Gray",2.3,3,0,5,19
+1,"Married","F","Terminated for Cause","Software Engineering",2,"Indeed",99280,"Software Engineer","MA",34,"US Citizen","Black or African American","No",2,"Alex Sweetwater",2.1,5,4,4,19
+1,"Married","F","Active","Production",3,"LinkedIn",71776,"Production Technician II","MA",43,"US Citizen","Black or African American","No",7,"Elijiah Gray",4.4,5,0,0,17
+0,"Single","F","Active","Production",3,"LinkedIn",65902,"Production Technician II","MA",34,"US Citizen","Black or African American","No",7,"Webster Butler",4,4,0,0,7
+1,"Married","F","Voluntarily Terminated","Production",3,"Google Search",57748,"Production Technician I","MA",66,"US Citizen","White","No",5,"Webster Butler",3.13,3,0,0,16
+1,"Married","M","Active","Production",1,"Indeed",64057,"Production Technician I","MA",32,"US Citizen","White","No",6,"Amy Dunn",1.56,5,0,6,15
+0,"Single","M","Active","IT/IS",1,"LinkedIn",53366,"Network Engineer","MA",34,"US Citizen","White","No",6,"Peter Monroe",1.2,3,6,3,2
+1,"Married","F","Active","Production",3,"Google Search",58530,"Production Technician I","MA",40,"US Citizen","White","No",9,"Brannon Miller",5,5,0,0,19
+0,"Single","M","Voluntarily Terminated","Production",3,"Google Search",72609,"Production Technician II","MA",40,"US Citizen","White","Yes",2,"Amy Dunn",4.76,5,0,0,20
+1,"Married","F","Voluntarily Terminated","Production",3,"Google Search",55965,"Production Technician II","MA",38,"US Citizen","White","No",2,"Ketsia Liebig",3.66,3,0,0,6
+1,"Married","M","Terminated for Cause","Sales",3,"Employee Referral",70187,"Area Sales Manager","MA",46,"US Citizen","White","No",4,"Lynn Daneault",2,5,0,4,7
+0,"Single","M","Active","IT/IS",4,"Indeed",178000,"IT Director","MA",41,"US Citizen","Black or African American","No",10,"Jennifer Zamora",5,5,5,0,15
+1,"Married","F","Active","Admin Offices",3,"Other",99351,"Sr. Accountant","MA",42,"US Citizen","White","no",12,"Board of Directors",5,3,2,0,3
+0,"Single","M","Active","Sales",3,"CareerBuilder",67251,"Area Sales Manager","CT",58,"US Citizen","Black or African American","No",10,"Lynn Daneault",4.3,3,0,2,7
+0,"Single","F","Active","IT/IS",3,"LinkedIn",65707,"IT Support","CT",53,"US Citizen","White","No",11,"Eric Dougall",4.7,4,5,0,1
+0,"Single","M","Active","Production",3,"Employee Referral",52249,"Production Technician I","MA",36,"US Citizen","White","Yes",6,"David Stanley",4.5,3,0,0,5
+0,"Single","F","Active","Production",3,"LinkedIn",53171,"Production Technician I","MA",38,"US Citizen","Black or African American","Yes",10,"Kelley Spirea",4.2,4,0,0,12
+1,"Married","F","Active","Production",3,"LinkedIn",51337,"Production Technician I","MA",31,"US Citizen","Black or African American","No",6,"Michael Albert",3.73,3,0,0,19
+0,"Divorced","F","Voluntarily Terminated","Production",3,"Diversity Job Fair",51505,"Production Technician I","MA",51,"US Citizen","Black or African American","No",5,"Elijiah Gray",4.24,4,0,0,2
+0,"Widowed","F","Terminated for Cause","Sales",3,"CareerBuilder",59370,"Area Sales Manager","OH",50,"US Citizen","Black or African American","No",1,"John Smith",3.97,4,0,0,7
+1,"Married","M","Voluntarily Terminated","Production",2,"Diversity Job Fair",54933,"Production Technician I","MA",47,"US Citizen","Black or African American","No",3,"Webster Butler",3.97,4,0,3,15
+0,"Single","F","Active","Production",4,"Indeed",57815,"Production Technician I","MA",41,"US Citizen","Two or more races","Yes",7,"Amy Dunn",3.9,4,0,0,3
+0,"Single","F","Active","Sales",3,"Indeed",61555,"Area Sales Manager","IN",32,"US Citizen","White","No",6,"Lynn Daneault",4.5,5,0,0,20
+0,"Single","F","Terminated for Cause","IT/IS",3,"Indeed",114800,"Database Administrator","MA",50,"US Citizen","White","No",0,"Simon Roup",4.6,4,4,0,10
+1,"Married","M","Active","IT/IS",3,"LinkedIn",74679,"IT Support","MA",32,"US Citizen","White","Yes",6,"Peter Monroe",4.3,5,7,0,20
+0,"Single","F","Active","Production",3,"Indeed",53018,"Production Technician I","MA",29,"US Citizen","White","Yes",8,"Ketsia Liebig",4.3,5,0,0,7
+0,"Divorced","M","Active","Production",4,"Diversity Job Fair",59892,"Production Technician I","MA",52,"US Citizen","Black or African American","No",10,"Brannon Miller",4.5,4,0,0,1
+1,"Married","M","Voluntarily Terminated","Production",1,"Diversity Job Fair",68898,"Production Technician II","MA",57,"US Citizen","Black or African American","No",1,"Brannon Miller",3,3,0,3,10
+0,"Separated","F","Active","IT/IS",3,"Employee Referral",61242,"IT Support","MA",40,"US Citizen","White","Yes",6,"Peter Monroe",4.61,4,5,0,11
+1,"Married","F","Active","Production",3,"LinkedIn",66825,"Production Technician II","MA",35,"US Citizen","White","No",7,"David Stanley",4.6,3,0,0,20
+1,"Married","M","Active","Production",3,"LinkedIn",48285,"Production Technician I","MA",42,"US Citizen","White","No",9,"David Stanley",5,3,0,0,2
+0,"Separated","F","Active","Production",3,"Google Search",66149,"Production Technician II","MA",38,"US Citizen","American Indian or Alaska Native","No",8,"Kissy Sullivan",4.4,5,0,0,1
+1,"Married","F","Active","Production",3,"LinkedIn",49256,"Production Technician I","MA",47,"US Citizen","Asian","No",8,"Kissy Sullivan",4.1,5,0,0,3
+0,"Divorced","M","Active","Production",3,"Employee Referral",62957,"Production Manager","MA",40,"US Citizen","White","No",6,"Janet King",4.63,3,0,0,2
+0,"Divorced","F","Voluntarily Terminated","Production",3,"CareerBuilder",63813,"Production Technician I","MA",38,"US Citizen","White","No",3,"Kelley Spirea",5,5,0,0,17
+1,"Married","M","Active","IT/IS",3,"Indeed",99020,"BI Developer","MA",32,"US Citizen","Black or African American","No",4,"Brian Champaigne",4.2,5,5,0,8
+0,"Single","M","Voluntarily Terminated","Sales",3,"LinkedIn",71707,"Area Sales Manager","TN",52,"US Citizen","Two or more races","No",2,"John Smith",4.5,5,0,0,20
+1,"Married","F","Active","Production",3,"Google Search",54828,"Production Technician I","MA",44,"US Citizen","White","No",10,"Michael Albert",4.2,4,0,0,13
+0,"Single","M","Active","Production",3,"LinkedIn",64246,"Production Technician II","MA",33,"US Citizen","White","Yes",8,"Kelley Spirea",5,3,0,0,20
+0,"Single","F","Voluntarily Terminated","Production",3,"CareerBuilder",52177,"Production Technician I","MA",69,"US Citizen","White","No",3,"Webster Butler",4.64,4,0,0,8
+1,"Married","F","Active","Production",4,"CareerBuilder",62065,"Production Technician I","MA",47,"US Citizen","White","No",7,"Amy Dunn",4.76,4,0,0,5
+0,"Single","M","Active","Production",3,"Google Search",46998,"Production Technician I","MA",37,"US Citizen","White","No",9,"Ketsia Liebig",4.17,4,0,0,1
+0,"Single","F","Voluntarily Terminated","Production",3,"CareerBuilder",68099,"Production Technician II","MA",49,"US Citizen","White","No",2,"Kelley Spirea",5,3,0,0,15
+1,"Married","M","Active","Sales",3,"Indeed",70545,"Area Sales Manager","NH",33,"US Citizen","American Indian or Alaska Native","No",7,"John Smith",3.6,5,0,0,9
+1,"Married","F","Voluntarily Terminated","Production",3,"Indeed",63478,"Production Technician II","MA",37,"Non-Citizen","White","No",1,"Michael Albert",3.03,5,0,0,16
+0,"Single","F","Active","IT/IS",3,"Indeed",97999,"Database Administrator","MA",37,"US Citizen","White","No",6,"Simon Roup",4.48,5,6,0,4
+1,"Married","F","Active","Sales",3,"LinkedIn",180000,"Director of Sales","RI",55,"US Citizen","White","No",7,"Janet King",4.5,4,0,0,19
+1,"Married","F","Terminated for Cause","Admin Offices",3,"Indeed",49920,"Administrative Assistant","MA",36,"US Citizen","Black or African American","No",0,"Brandon R. LeBlanc",3.24,3,4,0,6
+0,"Single","F","Active","Production",3,"LinkedIn",55425,"Production Technician I","MA",35,"US Citizen","White","No",9,"Ketsia Liebig",4.8,4,0,0,4
+0,"Single","F","Active","Production",3,"LinkedIn",69340,"Production Technician II","MA",37,"US Citizen","White","No",5,"Elijiah Gray",3,5,0,0,4
+0,"Separated","F","Active","Production",3,"Indeed",64995,"Production Technician II","MA",29,"US Citizen","White","No",6,"Webster Butler",4.5,3,0,0,6
+0,"Divorced","F","Voluntarily Terminated","Production",3,"Google Search",68182,"Production Technician II","MA",45,"US Citizen","White","No",2,"Amy Dunn",3.72,3,0,0,18
+1,"Married","M","Voluntarily Terminated","Production",2,"Indeed",83082,"Production Manager","MA",45,"US Citizen","Asian","No",1,"Janet King",2.34,2,0,3,4
+0,"Single","F","Active","Production",3,"Indeed",51908,"Production Technician I","MA",30,"US Citizen","White","No",8,"Brannon Miller",3.99,3,0,0,14
+0,"Single","F","Active","Production",3,"LinkedIn",61242,"Production Technician I","MA",49,"US Citizen","Black or African American","No",9,"David Stanley",4.1,3,0,0,7
+0,"Divorced","F","Active","Production",3,"Employee Referral",45069,"Production Technician I","MA",55,"US Citizen","White","No",8,"Kissy Sullivan",4.3,5,0,0,7
+0,"Divorced","F","Active","Production",4,"LinkedIn",60724,"Production Technician II","MA",35,"US Citizen","American Indian or Alaska Native","No",10,"Ketsia Liebig",4.6,4,0,0,11
+0,"Separated","F","Active","Production",3,"LinkedIn",60436,"Production Technician I","MA",57,"US Citizen","White","No",7,"Kelley Spirea",5,5,0,0,9
+1,"Married","M","Voluntarily Terminated","Production",4,"CareerBuilder",46837,"Production Technician I","MA",62,"US Citizen","White","No",7,"Michael Albert",4.7,4,0,0,9
+1,"Married","F","Active","IT/IS",3,"Indeed",105700,"Database Administrator","MA",35,"US Citizen","Asian","No",6,"Simon Roup",3.75,3,5,0,2
+0,"Single","F","Active","Production",4,"LinkedIn",63322,"Production Technician II","MA",52,"US Citizen","White","No",7,"Brannon Miller",4.3,3,0,0,1
+1,"Married","F","Voluntarily Terminated","Production",3,"CareerBuilder",61154,"Production Technician I","MA",35,"US Citizen","Black or African American","No",5,"Elijiah Gray",4,4,0,0,4
+0,"Single","F","Voluntarily Terminated","Sales",3,"Google Search",68999,"Sales Manager","PA",32,"US Citizen","White","No",3,"Debra Houlihan",4.5,5,0,0,2
+0,"Single","M","Active","Production",3,"Indeed",50482,"Production Technician I","MA",45,"US Citizen","White","No",8,"Michael Albert",3.07,4,0,0,10
+0,"Single","M","Active","Sales",3,"Indeed",65310,"Area Sales Manager","CO",42,"US Citizen","White","No",8,"Lynn Daneault",4.3,5,0,0,13
+1,"Married","F","Active","Executive Office",3,"Indeed",250000,"President & CEO","MA",67,"US Citizen","White","Yes",9,"Board of Directors",4.83,3,0,0,10
+1,"Married","F","Voluntarily Terminated","Production",3,"Google Search",54005,"Production Technician I","MA",48,"US Citizen","White","No",4,"Webster Butler",3.6,5,0,0,16
+1,"Married","F","Voluntarily Terminated","Production",3,"Google Search",45433,"Production Technician I","MA",51,"US Citizen","White","No",3,"Amy Dunn",3.49,4,0,0,6
+0,"Single","M","Active","Production",3,"LinkedIn",46654,"Production Technician I","MA",44,"US Citizen","Black or African American","No",7,"Ketsia Liebig",3.1,3,0,0,3
+1,"Married","M","Active","Production",3,"Indeed",63973,"Production Technician I","MA",41,"US Citizen","Asian","No",10,"Brannon Miller",3.38,3,0,0,17
+0,"Single","M","Active","Sales",3,"Diversity Job Fair",71339,"Area Sales Manager","NY",52,"US Citizen","Black or African American","Yes",10,"John Smith",3.65,5,0,0,20
+1,"Married","M","Active","IT/IS",3,"Employee Referral",93206,"Sr. Network Engineer","MA",35,"US Citizen","White","No",7,"Peter Monroe",4.46,5,6,0,7
+1,"Married","M","Terminated for Cause","Production",3,"Employee Referral",82758,"Production Manager","MA",49,"US Citizen","White","No",4,"Janet King",4.78,4,0,0,9
+0,"Divorced","F","Voluntarily Terminated","Production",3,"Indeed",66074,"Production Technician II","MA",42,"US Citizen","Asian","No",1,"David Stanley",4.52,3,0,0,20
+1,"Married","M","Active","Production",3,"LinkedIn",46120,"Production Technician I","MA",35,"US Citizen","White","No",9,"David Stanley",5,5,0,0,13
+0,"Divorced","M","Active","Admin Offices",3,"Website",64520,"Accountant I","MA",37,"US Citizen","Black or African American","No",7,"Brandon R. LeBlanc",5,4,4,0,3
+1,"Married","M","Voluntarily Terminated","Production",3,"Google Search",61962,"Production Technician II","MA",37,"US Citizen","White","No",1,"Kissy Sullivan",4.9,3,0,0,20
+0,"Single","F","Active","IT/IS",3,"Indeed",81584,"Senior BI Developer","MA",34,"US Citizen","Asian","No",5,"Brian Champaigne",4.1,5,7,0,2
+0,"Single","F","Voluntarily Terminated","Production",3,"CareerBuilder",63676,"Production Technician I","MA",42,"US Citizen","Asian","No",7,"Kissy Sullivan",4.88,3,0,0,17
+1,"Married","M","Active","Admin Offices",3,"CareerBuilder",93046,"Shared Services Manager","MA",37,"US Citizen","White","No",5,"Janet King",4.1,4,0,0,20
+1,"Married","M","Active","Production",3,"Google Search",64738,"Production Technician I","MA",39,"US Citizen","Asian","No",9,"Elijiah Gray",4.1,3,0,0,10
+0,"Separated","M","Active","Sales",3,"Website",70468,"Area Sales Manager","UT",33,"US Citizen","Black or African American","No",9,"John Smith",4.53,3,0,0,16
+1,"Married","F","Active","Production",4,"Website",77915,"Production Manager","MA",40,"US Citizen","White","No",8,"Janet King",4.1,3,0,0,11
+1,"Married","F","Voluntarily Terminated","Production",3,"Indeed",52624,"Production Technician I","MA",40,"US Citizen","White","No",7,"Michael Albert",3.18,4,0,0,16
+1,"Married","M","Active","Production",3,"LinkedIn",63450,"Production Technician II","MA",42,"US Citizen","White","No",8,"Kelley Spirea",4,3,0,0,7
+0,"Single","F","Active","IT/IS",4,"Diversity Job Fair",51777,"IT Support","CT",33,"US Citizen","Black or African American","Yes",10,"Eric Dougall",4.64,4,5,0,14
+0,"Widowed","F","Voluntarily Terminated","Production",3,"LinkedIn",67237,"Production Technician II","MA",45,"US Citizen","White","No",3,"Michael Albert",4.65,4,0,0,15
+0,"Single","F","Active","Production",4,"Indeed",73330,"Production Technician II","MA",39,"US Citizen","Black or African American","No",8,"Elijiah Gray",4.2,4,0,0,19
+1,"Married","F","Active","Production",3,"Website",52057,"Production Technician I","MA",46,"US Citizen","Black or African American","No",6,"Elijiah Gray",5,3,0,0,6
+0,"Single","F","Voluntarily Terminated","Production",4,"Diversity Job Fair",47434,"Production Technician I","MA",48,"US Citizen","Black or African American","Yes",4,"Webster Butler",5,4,0,0,17
+0,"Widowed","M","Voluntarily Terminated","Production",3,"Indeed",52788,"Production Technician I","MA",49,"US Citizen","White","No",5,"Amy Dunn",3.08,4,0,0,18
+0,"Single","F","Active","Production",3,"LinkedIn",45395,"Production Technician I","MA",35,"US Citizen","White","No",7,"Ketsia Liebig",4.6,4,0,0,14
+1,"Married","F","Active","Production",3,"LinkedIn",62385,"Production Technician II","MA",45,"US Citizen","White","No",5,"Webster Butler",5,3,0,0,4
+1,"Married","F","Voluntarily Terminated","Production",3,"LinkedIn",68407,"Production Technician II","MA",35,"US Citizen","Two or more races","No",1,"Amy Dunn",5,4,0,0,16
+1,"Married","F","Active","Production",3,"LinkedIn",61349,"Production Technician I","MA",47,"US Citizen","White","No",8,"Brannon Miller",4.1,3,0,0,11
+0,"Single","F","Active","Software Engineering",3,"Google Search",105688,"Software Engineer","MA",34,"US Citizen","Asian","No",8,"Alex Sweetwater",4.5,5,4,0,14
+1,"Married","F","Active","Production",3,"Indeed",54132,"Production Technician I","MA",44,"US Citizen","White","No",10,"David Stanley",5,4,0,0,8
+0,"Single","F","Active","Production",3,"LinkedIn",55315,"Production Technician II","MA",34,"US Citizen","Black or African American","No",6,"Ketsia Liebig",5,5,0,0,16
+1,"Married","F","Active","Production",3,"CareerBuilder",62810,"Production Technician I","MA",34,"US Citizen","Black or African American","No",8,"Kissy Sullivan",3.93,3,0,0,20
+1,"Married","M","Active","Sales",3,"Website",63291,"Area Sales Manager","TX",37,"US Citizen","Two or more races","No",5,"Lynn Daneault",3.4,4,0,0,7
+0,"Single","F","Voluntarily Terminated","Production",3,"Diversity Job Fair",62659,"Production Technician I","MA",53,"US Citizen","Black or African American","No",4,"Kelley Spirea",4.18,4,0,0,17
+0,"Single","F","Active","Production",3,"CareerBuilder",55688,"Production Technician I","MA",45,"US Citizen","White","No",6,"Michael Albert",5,4,0,0,10
+0,"Single","M","Voluntarily Terminated","Production",1,"LinkedIn",55800,"Production Technician II","MA",36,"US Citizen","White","No",3,"Brannon Miller",3,2,0,6,6
+1,"Married","M","Active","Production",3,"LinkedIn",58207,"Production Technician II","MA",29,"US Citizen","White","No",10,"David Stanley",3.7,3,0,0,14
+1,"Married","M","Active","IT/IS",2,"Diversity Job Fair",157000,"IT Manager - Infra","MA",35,"Eligible NonCitizen","Black or African American","Yes",9,"Jennifer Zamora",2.39,3,6,4,13
+0,"Single","F","Active","Production",4,"Indeed",72460,"Production Technician II","MA",51,"US Citizen","Black or African American","No",8,"Kissy Sullivan",4.7,3,0,0,1
+0,"Single","M","Active","Production",3,"Diversity Job Fair",72106,"Production Technician II","MA",45,"US Citizen","Black or African American","No",9,"Kelley Spirea",4.1,4,0,0,12
+1,"Married","F","Active","IT/IS",3,"CareerBuilder",52599,"Network Engineer","MA",42,"US Citizen","White","No",6,"Peter Monroe",3.81,3,6,0,6
+0,"Divorced","F","Active","Production",3,"LinkedIn",63430,"Production Technician I","MA",37,"US Citizen","White","No",8,"Elijiah Gray",4.4,4,0,0,18
+0,"Separated","M","Active","Production",3,"LinkedIn",74417,"Production Technician II","MA",47,"US Citizen","Black or African American","No",8,"Michael Albert",4.29,5,0,0,11
+0,"Single","M","Active","Production",3,"LinkedIn",57575,"Production Technician I","MA",41,"US Citizen","Asian","No",8,"Kissy Sullivan",4.1,4,0,0,13
+0,"Single","M","Active","IT/IS",3,"Indeed",87921,"Senior BI Developer","MA",51,"US Citizen","Asian","No",4,"Brian Champaigne",5,3,6,0,17
+0,"Single","M","Voluntarily Terminated","Production",3,"Diversity Job Fair",50470,"Production Technician I","MA",32,"US Citizen","Black or African American","No",3,"Webster Butler",4.3,3,0,0,19
+1,"Married","M","Voluntarily Terminated","Production",3,"Employee Referral",46664,"Production Technician I","MA",38,"US Citizen","White","No",3,"Amy Dunn",3.18,3,0,0,10
+1,"Married","M","Active","Production",3,"LinkedIn",48495,"Production Technician I","MA",44,"US Citizen","White","No",7,"Ketsia Liebig",5,5,0,0,11
+0,"Separated","F","Active","Production",4,"Diversity Job Fair",52984,"Production Technician I","MA",54,"US Citizen","Black or African American","No",8,"Brannon Miller",4,3,0,0,12
+0,"Single","F","Active","Sales",3,"Indeed",63695,"Area Sales Manager","GA",32,"US Citizen","Two or more races","No",8,"Lynn Daneault",5,5,0,0,2
+0,"Single","F","Active","Production",3,"LinkedIn",62061,"Production Technician I","MA",37,"US Citizen","White","No",8,"David Stanley",3.6,5,0,0,4
+0,"Single","F","Active","Production",3,"Indeed",66738,"Production Technician II","MA",36,"US Citizen","White","No",7,"Elijiah Gray",4.53,5,0,0,5
+0,"Single","F","Terminated for Cause","Production",1,"LinkedIn",52674,"Production Technician I","MA",41,"US Citizen","Two or more races","No",4,"Kissy Sullivan",2.33,2,0,6,3
+1,"Married","F","Voluntarily Terminated","Production",3,"LinkedIn",71966,"Production Technician II","MA",69,"US Citizen","Asian","No",1,"Webster Butler",5,3,0,0,17
+0,"Single","F","Active","Sales",3,"Indeed",63051,"Area Sales Manager","FL",31,"US Citizen","White","Yes",8,"Lynn Daneault",4.28,3,0,0,1
+1,"Married","M","Active","Production",4,"LinkedIn",47414,"Production Technician I","MA",45,"US Citizen","White","No",8,"Kelley Spirea",5,3,0,0,13
+0,"Single","M","Active","Production",2,"LinkedIn",53060,"Production Technician I","MA",42,"US Citizen","Black or African American","No",7,"Michael Albert",4.25,3,0,4,6
+0,"Single","M","Active","Sales",3,"Website",68829,"Area Sales Manager","NC",39,"US Citizen","White","No",6,"John Smith",5,5,0,0,18
+1,"Married","F","Voluntarily Terminated","Production",3,"Google Search",63515,"Production Technician I","MA",42,"US Citizen","White","No",3,"Elijiah Gray",3.89,4,0,0,7
+0,"Single","M","Voluntarily Terminated","Software Engineering",4,"Diversity Job Fair",108987,"Software Engineer","MA",42,"US Citizen","Black or African American","No",4,"Alex Sweetwater",5,5,3,0,13
+1,"Married","M","Voluntarily Terminated","IT/IS",3,"Employee Referral",93093,"Data Analyst","MA",37,"US Citizen","White","No",2,"Simon Roup",4.7,4,5,0,19
+0,"Single","M","Voluntarily Terminated","Production",2,"Google Search",53564,"Production Technician I","MA",33,"US Citizen","Black or African American","No",6,"Webster Butler",3.54,5,0,4,15
+1,"Married","F","Voluntarily Terminated","Production",2,"CareerBuilder",60270,"Production Technician II","MA",32,"US Citizen","Asian","No",4,"Amy Dunn",2.4,5,0,5,2
+0,"Single","F","Voluntarily Terminated","Production",3,"LinkedIn",45998,"Production Technician I","MA",35,"US Citizen","White","No",4,"Amy Dunn",3.45,4,0,0,5
+1,"Married","F","Voluntarily Terminated","Production",4,"Indeed",57954,"Production Technician II","MA",35,"US Citizen","White","No",2,"Ketsia Liebig",4.2,5,0,0,12
+1,"Married","F","Voluntarily Terminated","Production",3,"Indeed",74669,"Production Manager","MA",44,"US Citizen","White","No",6,"Janet King",4.16,5,0,0,6
+1,"Married","F","Active","Production",3,"LinkedIn",74226,"Production Technician II","MA",42,"Eligible NonCitizen","Asian","No",9,"Brannon Miller",4.3,3,0,0,14
+1,"Married","F","Active","IT/IS",4,"Employee Referral",93554,"Data Analyst","MA",37,"US Citizen","Black or African American","No",7,"Simon Roup",4.6,5,7,0,16
+1,"Married","M","Voluntarily Terminated","Production",3,"Google Search",64724,"Production Technician I","MA",33,"US Citizen","Asian","No",1,"Brannon Miller",5,3,0,0,13
+0,"Single","M","Active","Production",3,"Google Search",47001,"Production Technician I","MA",40,"US Citizen","White","No",14,"David Stanley",3.66,3,0,0,15
+1,"Married","F","Active","Sales",3,"Website",61844,"Area Sales Manager","KY",33,"US Citizen","Black or African American","No",9,"Lynn Daneault",4.2,5,0,0,9
+0,"Divorced","F","Voluntarily Terminated","Production",3,"Google Search",46799,"Production Technician I","MA",37,"Eligible NonCitizen","Asian","No",7,"Kissy Sullivan",3.17,4,0,0,14
+0,"Single","M","Active","Production",3,"Employee Referral",59472,"Production Technician I","MA",60,"US Citizen","White","No",7,"Kelley Spirea",4.8,3,0,0,14
+0,"Divorced","F","Voluntarily Terminated","Production",3,"Indeed",46430,"Production Technician I","MA",51,"US Citizen","White","No",1,"Kissy Sullivan",4.5,5,0,0,16
+1,"Married","M","Voluntarily Terminated","Software Engineering",3,"Diversity Job Fair",83363,"Software Engineer","MA",37,"Eligible NonCitizen","Black or African American","No",4,"Janet King",4.15,4,0,0,4
+1,"Married","F","Active","IT/IS",3,"Indeed",95920,"BI Developer","MA",41,"US Citizen","Black or African American","No",5,"Brian Champaigne",4.4,4,6,0,10
+0,"Divorced","M","Voluntarily Terminated","Production",3,"Indeed",61729,"Production Technician I","MA",37,"US Citizen","White","No",7,"Michael Albert",3.8,5,0,0,19
+1,"Married","M","Active","Sales",3,"CareerBuilder",61809,"Area Sales Manager","ID",67,"US Citizen","White","No",7,"John Smith",3.98,3,0,0,4
+0,"Divorced","M","Voluntarily Terminated","Production",3,"LinkedIn",45115,"Production Technician I","MA",39,"US Citizen","White","Yes",5,"Elijiah Gray",5,4,0,0,11
+1,"Married","F","Active","Production",4,"Google Search",46738,"Production Technician I","MA",48,"US Citizen","Asian","No",10,"Webster Butler",4.36,5,0,0,16
+0,"Divorced","F","Voluntarily Terminated","Production",3,"Google Search",64971,"Production Technician II","MA",40,"Eligible NonCitizen","Black or African American","No",0,"David Stanley",4.5,4,0,0,10
+1,"Married","M","Voluntarily Terminated","Production",3,"Indeed",55578,"Production Technician II","MA",49,"US Citizen","White","No",1,"Kissy Sullivan",4.2,5,0,0,13
+1,"Married","M","Voluntarily Terminated","Production",3,"Indeed",50428,"Production Technician I","MA",47,"US Citizen","Black or African American","No",5,"Amy Dunn",5,3,0,0,11
+1,"Married","F","Terminated for Cause","Production",2,"Indeed",61422,"Production Technician I","MA",36,"US Citizen","White","No",5,"Ketsia Liebig",3.6,3,0,4,16
+0,"Widowed","M","Active","Production",4,"Employee Referral",63353,"Production Technician I","MA",36,"US Citizen","White","No",8,"Brannon Miller",3.6,5,0,0,4
+1,"Married","F","Active","IT/IS",3,"Employee Referral",89883,"Data Analyst","MA",40,"US Citizen","White","No",6,"Simon Roup",3.69,5,6,0,15
+0,"Single","F","Voluntarily Terminated","IT/IS",3,"LinkedIn",120000,"Principal Data Architect","MA",48,"US Citizen","White","Yes",3,"Simon Roup",3.88,3,7,0,12
+0,"Single","F","Active","IT/IS",3,"Indeed",150290,"Data Architect","MA",49,"US Citizen","Black or African American","No",4,"Brian Champaigne",4.94,3,5,0,17
+0,"Separated","F","Active","Production",3,"Website",60627,"Production Technician I","MA",47,"US Citizen","White","No",7,"David Stanley",5,4,0,0,8
+0,"Single","M","Voluntarily Terminated","Production",3,"Google Search",53180,"Production Technician I","MA",34,"US Citizen","White","No",7,"Kissy Sullivan",5,5,0,0,4
+0,"Single","M","Active","IT/IS",3,"Indeed",140920,"IT Manager - DB","MA",48,"US Citizen","White","No",8,"Jennifer Zamora",3.6,5,7,0,13
+0,"Divorced","M","Voluntarily Terminated","IT/IS",3,"Diversity Job Fair",148999,"IT Manager - DB","MA",57,"US Citizen","Black or African American","No",3,"Jennifer Zamora",4.3,4,6,0,8
+1,"Married","F","Active","Software Engineering",3,"Indeed",86214,"Software Engineer","MA",35,"US Citizen","White","No",9,"Alex Sweetwater",4.2,3,6,0,2
+0,"Single","F","Active","Production",2,"Diversity Job Fair",47750,"Production Technician I","MA",53,"US Citizen","Black or African American","No",5,"Kelley Spirea",2.6,4,0,5,4
+0,"Single","M","Voluntarily Terminated","Production",3,"Google Search",46428,"Production Technician I","MA",47,"US Citizen","White","No",9,"Michael Albert",4.6,5,0,0,7
+1,"Married","M","Active","Production",3,"CareerBuilder",57975,"Production Technician II","MA",35,"US Citizen","White","No",11,"Kelley Spirea",4.1,3,0,0,13
+0,"Divorced","M","Voluntarily Terminated","IT/IS",3,"LinkedIn",88527,"Data Analyst","MA",34,"US Citizen","Black or African American","No",0,"Simon Roup",4.2,3,5,0,2
+1,"Married","F","Active","Production",3,"LinkedIn",56147,"Production Technician I","MA",33,"US Citizen","Black or African American","No",7,"Elijiah Gray",3.51,3,0,0,2
+0,"Single","F","Active","Production",3,"Google Search",50923,"Production Technician I","MA",46,"US Citizen","Asian","No",8,"Webster Butler",5,5,0,0,14
+1,"Married","F","Active","IT/IS",3,"LinkedIn",50750,"Network Engineer","MA",40,"US Citizen","White","No",7,"Peter Monroe",3.31,3,6,0,7
+1,"Married","F","Active","Production",3,"LinkedIn",52087,"Production Technician I","MA",36,"US Citizen","White","No",8,"Amy Dunn",4.81,4,0,0,15
+1,"Married","M","Active","IT/IS",3,"Employee Referral",87826,"Data Analyst","MA",51,"US Citizen","White","Yes",6,"Simon Roup",3.32,3,7,0,16
+0,"Single","F","Active","Admin Offices",3,"Website",51920,"Administrative Assistant","MA",33,"US Citizen","White","No",6,"Brandon R. LeBlanc",5,3,5,0,2
+0,"Single","F","Voluntarily Terminated","Production",3,"CareerBuilder",63878,"Production Technician II","MA",34,"US Citizen","White","No",6,"Michael Albert",4.68,4,0,0,20
+0,"Single","M","Active","Production",4,"Indeed",60656,"Production Technician II","MA",58,"US Citizen","White","No",7,"Elijiah Gray",4.3,3,0,0,4
+0,"Divorced","M","Active","Sales",2,"Diversity Job Fair",72992,"Sales Manager","MA",37,"US Citizen","Black or African American","No",7,"Debra Houlihan",2.4,4,0,2,16
+1,"Married","F","Voluntarily Terminated","Admin Offices",3,"Diversity Job Fair",55000,"Administrative Assistant","MA",34,"US Citizen","Black or African American","No",2,"Brandon R. LeBlanc",3.8,4,4,0,17
+0,"Single","F","Active","Production",3,"Employee Referral",58939,"Production Technician I","MA",56,"US Citizen","White","No",8,"Ketsia Liebig",3.73,3,0,0,16
+1,"Married","F","Active","IT/IS",3,"LinkedIn",66593,"IT Support","MA",48,"US Citizen","Black or African American","No",10,"Eric Dougall",4.3,3,5,0,19
+1,"Married","M","Active","IT/IS",3,"LinkedIn",87565,"Sr. Network Engineer","MA",38,"US Citizen","Asian","No",5,"Peter Monroe",3.27,4,5,0,13
+1,"Married","F","Active","Production",1,"Indeed",64021,"Production Technician I","MA",53,"US Citizen","White","No",9,"Brannon Miller",2.4,2,1,6,20
+1,"Married","F","Active","Production",3,"LinkedIn",65714,"Production Manager","MA",46,"US Citizen","White","No",9,"Janet King",4.83,5,0,0,15
+0,"Divorced","F","Voluntarily Terminated","Production",4,"LinkedIn",62425,"Production Technician I","MA",48,"US Citizen","White","No",2,"David Stanley",4.1,4,0,0,16
+0,"Divorced","F","Active","Production",3,"Google Search",47961,"Production Technician I","MA",39,"US Citizen","Two or more races","No",10,"Kissy Sullivan",4.1,4,0,0,9
+1,"Married","M","Active","Sales",1,"Website",58273,"Area Sales Manager","NV",47,"US Citizen","White","No",7,"Lynn Daneault",1.81,2,0,3,5
+0,"Single","M","Active","Admin Offices",3,"Indeed",63003,"Accountant I","MA",35,"US Citizen","White","No",7,"Brandon R. LeBlanc",3.9,5,5,0,9
+1,"Married","M","Active","Production",3,"LinkedIn",61355,"Production Technician I","MA",36,"US Citizen","Asian","No",7,"Kelley Spirea",4.7,3,0,0,4
+1,"Married","F","Active","Sales",3,"Indeed",60120,"Area Sales Manager","MT",32,"US Citizen","Black or African American","No",11,"John Smith",4.1,4,0,0,18
+1,"Married","F","Active","Production",3,"Indeed",63682,"Production Manager","MA",43,"US Citizen","Black or African American","No",12,"Janet King",3.73,4,0,0,12
+1,"Married","M","Active","Production",3,"Google Search",63025,"Production Technician I","MA",39,"US Citizen","White","Yes",6,"Michael Albert",4.36,5,0,0,10
+0,"Single","F","Active","Production",3,"Indeed",59238,"Production Technician I","MA",53,"Eligible NonCitizen","Asian","No",9,"Elijiah Gray",3.4,5,0,0,13
+0,"Single","M","Active","Software Engineering",4,"LinkedIn",92989,"Software Engineer","MA",38,"US Citizen","White","No",7,"Alex Sweetwater",4.5,5,5,0,1
+1,"Married","M","Active","IT/IS",3,"Indeed",90100,"BI Developer","MA",34,"US Citizen","White","No",4,"Brian Champaigne",3.4,3,6,0,14
+1,"Married","F","Voluntarily Terminated","Production",3,"Diversity Job Fair",60754,"Production Technician I","MA",46,"Non-Citizen","Black or African American","No",4,"Webster Butler",4.5,5,0,0,11
+1,"Married","F","Voluntarily Terminated","Production",3,"Google Search",72202,"Production Technician II","MA",68,"US Citizen","White","No",6,"Elijiah Gray",3.93,3,0,0,3
+0,"Single","F","Active","Sales",3,"Indeed",58370,"Area Sales Manager","OR",56,"US Citizen","Black or African American","No",7,"Lynn Daneault",3.69,3,0,0,18
+0,"Single","F","Voluntarily Terminated","Production",3,"Indeed",48413,"Production Technician I","MA",56,"US Citizen","White","No",5,"Amy Dunn",3.98,4,0,0,1
+0,"Widowed","M","Voluntarily Terminated","Production",3,"Other",67176,"Production Technician II","MA",46,"US Citizen","White","No",3,"Webster Butler",4.1,4,0,0,15
+0,"Divorced","F","Active","Production",3,"Indeed",56339,"Production Technician I","MA",54,"US Citizen","Black or African American","No",8,"Brannon Miller",4.21,5,0,0,4
+0,"Separated","M","Active","Sales",4,"Indeed",64397,"Area Sales Manager","ND",53,"US Citizen","White","No",15,"Lynn Daneault",4.1,3,0,0,6
+0,"Single","F","Active","Production",2,"LinkedIn",63025,"Production Technician I","MA",38,"US Citizen","White","No",7,"David Stanley",2.44,5,0,4,18
+1,"Married","M","Voluntarily Terminated","IT/IS",3,"CareerBuilder",75281,"Network Engineer","MA",33,"US Citizen","White","No",1,"Peter Monroe",5,3,5,0,11
+0,"Single","M","Voluntarily Terminated","Software Engineering",3,"Diversity Job Fair",100416,"Software Engineer","MA",38,"Non-Citizen","Black or African American","No",5,"Alex Sweetwater",4.6,3,4,0,9
+0,"Single","F","Voluntarily Terminated","Production",3,"LinkedIn",74813,"Production Technician II","MA",36,"US Citizen","White","No",3,"Amy Dunn",4.4,3,0,0,5
+1,"Married","M","Active","IT/IS",3,"Employee Referral",76029,"Network Engineer","MA",52,"Eligible NonCitizen","White","No",6,"Peter Monroe",5,4,7,0,8
+1,"Married","F","Active","Sales",3,"Indeed",57859,"Area Sales Manager","AZ",30,"US Citizen","Two or more races","No",10,"John Smith",2.81,3,0,0,16
+0,"Divorced","M","Voluntarily Terminated","Production",4,"LinkedIn",58523,"Production Technician I","MA",34,"US Citizen","White","No",4,"Kissy Sullivan",4.5,5,0,0,15
+0,"Divorced","M","Active","Production",3,"Employee Referral",88976,"Production Manager","MA",53,"US Citizen","White","No",10,"Janet King",3.93,3,0,0,19
+0,"Single","M","Active","Sales",3,"Website",55875,"Area Sales Manager","ME",32,"US Citizen","Asian","No",9,"John Smith",4.5,4,0,0,11
+1,"Married","M","Terminated for Cause","IT/IS",3,"Employee Referral",113999,"Database Administrator","MA",35,"US Citizen","Black or African American","No",2,"Simon Roup",4.33,3,7,0,9
+1,"Married","F","Terminated for Cause","Production",4,"Google Search",49773,"Production Technician I","MA",35,"US Citizen","White","No",5,"Kelley Spirea",4.3,5,0,0,18
+0,"Single","F","Active","Production",3,"LinkedIn",62068,"Production Technician I","MA",36,"US Citizen","White","No",6,"Michael Albert",3.21,3,0,0,7
+0,"Single","M","Active","Production",3,"Employee Referral",66541,"Production Technician II","MA",45,"US Citizen","Black or African American","No",7,"Ketsia Liebig",3.11,5,0,0,4
+1,"Married","F","Voluntarily Terminated","Production",3,"Diversity Job Fair",80512,"Production Manager","MA",66,"US Citizen","Black or African American","No",1,"Janet King",4.5,3,0,0,5
+0,"Single","F","Voluntarily Terminated","Production",2,"CareerBuilder",50274,"Production Technician I","MA",41,"US Citizen","White","No",3,"Elijiah Gray",2.5,3,0,6,13
+0,"Single","M","Active","IT/IS",3,"Indeed",84903,"Senior BI Developer","MA",40,"US Citizen","Asian","No",4,"Brian Champaigne",3.42,4,7,0,17
+0,"Widowed","F","Active","IT/IS",3,"Employee Referral",107226,"Sr. Network Engineer","MA",43,"US Citizen","Asian","No",6,"Peter Monroe",4.2,4,8,0,7
+0,"Single","M","Voluntarily Terminated","Production",3,"LinkedIn",58371,"Production Technician I","MA",34,"US Citizen","White","Yes",3,"Webster Butler",5,5,0,0,11
+1,"Married","M","Voluntarily Terminated","Production",3,"Website",55140,"Production Technician I","MA",56,"Eligible NonCitizen","White","No",4,"Amy Dunn",5,3,0,0,7
+0,"Divorced","F","Voluntarily Terminated","Production",3,"Google Search",58062,"Production Technician I","MA",38,"US Citizen","White","No",1,"Ketsia Liebig",3.6,5,0,0,9
+0,"Single","F","Voluntarily Terminated","Production",3,"Diversity Job Fair",59728,"Production Technician I","MA",52,"US Citizen","Black or African American","Yes",3,"Ketsia Liebig",4.3,4,0,0,16
+0,"Single","M","Voluntarily Terminated","Production",4,"LinkedIn",70507,"Production Technician II","MA",63,"US Citizen","White","No",3,"Brannon Miller",5,3,0,0,7
+0,"Single","F","Active","Production",3,"LinkedIn",60446,"Production Technician II","MA",36,"US Citizen","White","No",7,"David Stanley",3.4,4,0,0,14
+0,"Single","M","Active","Production",3,"LinkedIn",65893,"Production Technician II","MA",36,"US Citizen","White","No",7,"Kissy Sullivan",4.07,4,0,0,13
+0,"Single","F","Voluntarily Terminated","Production",1,"Google Search",48513,"Production Technician I","MA",39,"US Citizen","Asian","No",7,"Brannon Miller",3.2,2,0,5,4
+0,"Single","F","Active","IT/IS",4,"Employee Referral",220450,"CIO","MA",42,"US Citizen","White","No",11,"Janet King",4.6,5,6,0,16
+0,"Single","F","Active","IT/IS",3,"Employee Referral",89292,"Data Analyst","MA",42,"US Citizen","White","No",6,"Simon Roup",5,3,5,0,11
+0,"Widowed","F","Active","Production",3,"LinkedIn",45046,"Production Technician I","MA",43,"US Citizen","Asian","No",7,"David Stanley",4.5,5,0,0,2

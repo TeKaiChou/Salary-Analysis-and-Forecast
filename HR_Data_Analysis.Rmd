@@ -1,0 +1,510 @@
+---
+title: "HR Data Analyis"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r cars}
+# Clear variables in memory
+rm(list=ls())
+
+# Raw Data: HRDataset_v14.csv
+# Read csv file
+HR <- read.csv("HRSub2.csv", head = TRUE, sep = ",")
+head(HR)
+
+#Import Libraries
+library(glmnet)
+library(caret)
+library(car)
+library(CombMSC)
+library(ggplot2)
+```
+
+# Preprocessing Data
+```{r}
+# Correct Errors
+HR$HispanicLatino[188]="Yes"
+HR$HispanicLatino[98]="No"
+
+# Factorization
+HR$MarriedID = as.factor(HR$MarriedID)
+HR$MaritalDesc = as.factor(HR$MaritalDesc)
+HR$Sex = as.factor(HR$Sex)
+HR$EmploymentStatus = as.factor(HR$EmploymentStatus)
+HR$Department = as.factor(HR$Department)
+HR$RecruitmentSource = as.factor(HR$RecruitmentSource)
+HR$Position = as.factor(HR$Position)
+HR$State = as.factor(HR$State)
+HR$CitizenDesc = as.factor(HR$CitizenDesc)
+HR$RaceDesc = as.factor(HR$RaceDesc)
+HR$HispanicLatino = as.factor(HR$HispanicLatino)
+HR$ManagerName = as.factor(HR$ManagerName)
+```
+
+# Split the Data set in training and testing data
+```{r}
+set.seed(123)
+train_index = createDataPartition(HR$Salary, p = 0.7, list = FALSE, times = 1)
+HRtrain = HR[train_index,]
+HRtest = HR[-train_index,]
+
+# Deal with the data absence in training dataset
+
+# Department
+test_unique = unique(HRtest$Department)
+train_unique = unique(HRtrain$Department)
+for (i in test_unique){
+  if ((i %in% train_unique)==FALSE){
+    add_row = HRtest[HRtest$Department == i,]
+    HRtrain = rbind(HRtrain, add_row)
+  }
+}
+
+# Position
+test_unique = unique(HRtest$Position)
+train_unique = unique(HRtrain$Position)
+for (i in test_unique){
+  if ((i %in% train_unique)==FALSE){
+    add_row = HRtest[HRtest$Position == i,]
+    HRtrain = rbind(HRtrain, add_row)
+  }
+}
+
+# State
+test_unique = unique(HRtest$State)
+train_unique = unique(HRtrain$State)
+for (i in test_unique){
+  if ((i %in% train_unique)==FALSE){
+    add_row = HRtest[HRtest$State == i,]
+    HRtrain = rbind(HRtrain, add_row)
+  }
+}
+```
+
+# Exploratory Data Analysis - Boxplots
+```{r}
+ggplot(HR, aes(x=MarriedID, y=Salary, color=MarriedID)) +
+  geom_boxplot() + theme(legend.position="none")
+
+ggplot(HR, aes(x=MaritalDesc, y=Salary, color=MaritalDesc)) +
+  geom_boxplot()+ theme(legend.position="none")
+
+ggplot(HR, aes(x=Sex, y=Salary, color=Sex)) +
+  geom_boxplot()+ theme(legend.position="none")
+
+ggplot(HR, aes(x=EmploymentStatus, y=Salary, color=EmploymentStatus)) +
+  geom_boxplot()+ theme(legend.position="none")
+
+ggplot(HR, aes(x=Department, y=Salary, color=Department)) +
+  geom_boxplot() + scale_x_discrete(guide = guide_axis(n.dodge=3)) + theme(legend.position="none")
+
+ggplot(HR, aes(x=RecruitmentSource, y=Salary, color=RecruitmentSource)) +
+  geom_boxplot() + scale_x_discrete(guide = guide_axis(n.dodge=3)) + theme(legend.position="none")
+
+ggplot(HR, aes(x=Position, y=Salary, color=Position)) +
+  geom_boxplot() + theme(axis.text.x = element_text(size = 8, angle = 90, vjust = 0.5, hjust=1)) + theme(legend.position="none")
+
+ggplot(HR, aes(x=State, y=Salary, color=State)) +
+  geom_boxplot() + scale_x_discrete(guide = guide_axis(n.dodge=3)) + theme(legend.position="none")
+
+ggplot(HR, aes(x=CitizenDesc, y=Salary, color=CitizenDesc)) +
+  geom_boxplot() + theme(legend.position="none")
+
+ggplot(HR, aes(x=RaceDesc, y=Salary, color=RaceDesc)) +
+  geom_boxplot() + scale_x_discrete(guide = guide_axis(n.dodge=3)) + theme(legend.position="none")
+
+ggplot(HR, aes(x=HispanicLatino, y=Salary, color=HispanicLatino)) +
+  geom_boxplot() + theme(legend.position="none")
+
+ggplot(HR, aes(x=ManagerName, y=Salary, color=ManagerName)) +
+  geom_boxplot()+ theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) + theme(legend.position="none")
+```
+
+# Exploratory Data Analysis - Scatter plots
+```{r}
+ggplot(HR, aes(x=PerfScoreID, y=Salary)) +
+  geom_point() + 
+  geom_smooth(method=lm, se=FALSE, fullrange=TRUE)
+
+ggplot(HR, aes(x=Age, y=Salary)) +
+  geom_point() + 
+  geom_smooth(method=lm, se=FALSE, fullrange=TRUE)
+
+ggplot(HR, aes(x=EmployedYear, y=Salary)) +
+  geom_point() + 
+  geom_smooth(method=lm, se=FALSE, fullrange=TRUE)
+
+ggplot(HR, aes(x=EngagementSurvey, y=Salary)) +
+  geom_point() + 
+  geom_smooth(method=lm, se=FALSE, fullrange=TRUE)
+
+ggplot(HR, aes(x=EmpSatisfaction, y=Salary)) +
+  geom_point() + 
+  geom_smooth(method=lm, se=FALSE, fullrange=TRUE)
+
+ggplot(HR, aes(x=SpecialProjectsCount, y=Salary)) +
+  geom_point() + 
+  geom_smooth(method=lm, se=FALSE, fullrange=TRUE)
+
+ggplot(HR, aes(x=DaysLateLast30, y=Salary)) +
+  geom_point() + 
+  geom_smooth(method=lm, se=FALSE, fullrange=TRUE)
+
+ggplot(HR, aes(x=Absences, y=Salary)) +
+  geom_point() + 
+  geom_smooth(method=lm, se=FALSE, fullrange=TRUE)
+```
+
+# 4.Fitting multiple linear regression model
+```{r}
+model_full = lm(Salary~., data = HRtrain)
+summary(model_full)
+```
+
+# 5.Testing model assumptions
+```{r}
+#plot(Salary~PerfScoreID+Age+EmployedYear+EngagementSurvey+EmpSatisfaction+SpecialProjectsCount+DaysLateLast30+Absences,data=HR)
+resids = model_full$residuals
+
+# Linearity
+par(mfrow=c(2,2))
+
+ggplot(HRtrain, aes(x=PerfScoreID, y=resids)) +
+  geom_point() + 
+  geom_smooth(method=lm, se=FALSE, fullrange=TRUE)
+
+ggplot(HRtrain, aes(x=Age, y=resids)) +
+  geom_point() + 
+  geom_smooth(method=lm, se=FALSE, fullrange=TRUE)
+
+ggplot(HRtrain, aes(x=EmployedYear, y=resids)) +
+  geom_point() + 
+  geom_smooth(method=lm, se=FALSE, fullrange=TRUE)
+
+ggplot(HRtrain, aes(x=EngagementSurvey, y=resids)) +
+  geom_point() + 
+  geom_smooth(method=lm, se=FALSE, fullrange=TRUE)
+
+ggplot(HRtrain, aes(x=EmpSatisfaction, y=resids)) +
+  geom_point() + 
+  geom_smooth(method=lm, se=FALSE, fullrange=TRUE)
+
+ggplot(HRtrain, aes(x=SpecialProjectsCount, y=resids)) +
+  geom_point() + 
+  geom_smooth(method=lm, se=FALSE, fullrange=TRUE)
+
+ggplot(HRtrain, aes(x=DaysLateLast30, y=resids)) +
+  geom_point() + 
+  geom_smooth(method=lm, se=FALSE, fullrange=TRUE)
+
+ggplot(HRtrain, aes(x=Absences, y=resids)) +
+  geom_point() + 
+  geom_smooth(method=lm, se=FALSE, fullrange=TRUE)
+
+# Constant Variance
+plot(fitted(model_full),resids,xlab="Fitted values",ylab="Residuals")
+abline(h=0, col="red")
+lines(lowess(model_full$fitted.values, resids), col='blue')
+
+# Normality
+hist(resids, xlab="residuals", col="orange",main=NULL, nclass=15)
+qqPlot(resids, xlab="normal quantiles", ylab="residuals")
+```
+
+#  Transformation Try Outs
+```{r}
+# Sqrt Transformation
+model_full_tr = lm(sqrt(Salary)~., data = HRtrain)
+# Variance
+resids_tr = model_full_tr$residuals
+plot(fitted(model_full_tr),resids_tr,xlab="Fitted values",ylab="Residuals")
+abline(h=0, col="red")
+lines(lowess(model_full_tr$fitted.values, resids_tr), col='blue')
+# Normality
+hist(resids_tr, xlab="residuals", col="orange",main=NULL, nclass=15)
+qqPlot(resids_tr, xlab="normal quantiles", ylab="residuals")
+
+# Log Transformation
+model_full_log = lm(log(Salary)~., data = HRtrain)
+# Variance
+resids_log = model_full_log$residuals
+plot(fitted(model_full_log),resids_log,xlab="Fitted values",ylab="Residuals")
+abline(h=0, col="red")
+lines(lowess(model_full_log$fitted.values, resids_log), col='blue')
+# Normality
+hist(resids_log, xlab="residuals", col="orange",main=NULL, nclass=15)
+qqPlot(resids_log, xlab="normal quantiles", ylab="residuals")
+
+```
+
+# Model Selection
+```{r}
+#Forward, Stepwise Regression
+reduced_model = lm(Salary~1, data = HRtrain)
+full_model = lm(Salary~., data = HRtrain)
+step(reduced_model,scope =list(lower= reduced_model, upper=full_model), direction="forward")
+```
+
+
+```{r}
+#Backward, Stepwise Regression
+step(full_model,scope = list(lower=reduced_model,upper=full_model),direction="backward")
+```
+
+```{r}
+#Both direction, Stepwise Regression
+step(full_model,scope = list(lower=reduced_model,upper=full_model),direction="both")
+```
+
+# Result of model comparison using training dataset
+- Forward: lm(formula = Salary ~ Position + EmpSatisfaction + Absences + HispanicLatino + MarriedID, data = HRtrain) / AIC:4017.63
+
+- Backward: lm(formula = Salary ~ Position + Age + HispanicLatino + EmpSatisfaction + Absences, data = HRtrain) / AIC:4018.76
+
+- Both: lm(formula = Salary ~ Position + HispanicLatino + EmpSatisfaction + Absences + MarriedID, data = HRtrain) # same as forward / AIC:4017.63
+
+# Result of Stepwise Regression
+```{r}
+model_forward = lm(formula = Salary ~ Position + EmpSatisfaction + Absences + HispanicLatino + MarriedID, data = HRtrain)
+summary(model_forward)
+model_backward = lm(formula = Salary ~ Position + Age + HispanicLatino + EmpSatisfaction + Absences, data = HRtrain)
+summary(model_backward)
+```
+
+# Check regression assumptions for model_forward, model_backward
+```{r}
+#plot(fitted(model_forward),residuals(model_forward),xlab="Fitted values",ylab="Residuals")
+#abline(h=0, col="red")
+#lines(lowess(model_forward$fitted.values, residuals(model_forward)), col='blue')
+
+#hist(residuals(model_forward), xlab="residuals", col="orange", main=NULL, nclass=15)
+#qqPlot(residuals(model_forward), xlab="normal quantiles", ylab="residuals")
+
+#plot(fitted(model_backward),residuals(model_backward),xlab="Fitted values",ylab="Residuals")
+#abline(h=0, col="red")
+#lines(lowess(model_backward$fitted.values, residuals(model_backward)), col='blue')
+
+# Normality
+#hist(residuals(model_backward), xlab="residuals", col="orange", main=NULL, nclass=15)
+#qqPlot(residuals(model_backward), xlab="normal quantiles", ylab="residuals")
+```
+
+#Regularized Regression
+```{r}
+X_pred = cbind(HRtrain$MarriedID, HRtrain$MaritalDesc, HRtrain$Sex, HRtrain$EmploymentStatus, HRtrain$Department, HRtrain$PerfScoreID, HRtrain$RecruitmentSource, HRtrain$Position, HRtrain$State, HRtrain$Age, HRtrain$CitizenDesc, HRtrain$RaceDesc, HRtrain$HispanicLatino, HRtrain$EmployedYear, HRtrain$ManagerName, HRtrain$EngagementSurvey, HRtrain$EmpSatisfaction, HRtrain$SpecialProjectsCount, HRtrain$DaysLateLast30, HRtrain$Absences)
+
+#Lasso Regresssion
+smodel.cv = cv.glmnet(X_pred, HRtrain$Salary, alpha = 1, nfolds = 10)
+smodel = glmnet(X_pred, HRtrain$Salary, alpha = 1, nlambda=100)
+
+coef(smodel, s = smodel.cv$lambda.min)
+plot(smodel,xvar="lambda",lwd=2) + abline(v=log(smodel.cv$lambda.min),col="black",lty=2)
+```
+
+# Result of Lasso
+```{r}
+model_lasso = lm(formula = Salary ~ PerfScoreID + Position + State + Age + EmployedYear + ManagerName + EmpSatisfaction + SpecialProjectsCount + Absences, data = HRtrain)
+summary(model_lasso)
+```
+
+# Check regression assumptions for model_lasso
+```{r}
+#plot(fitted(model_lasso),residuals(model_lasso),xlab="Fitted values",ylab="Residuals")
+#abline(h=0, col="red")
+#lines(lowess(model_lasso$fitted.values, residuals(model_lasso)), col='blue')
+
+# Normality
+#hist(residuals(model_lasso), xlab="residuals", col="orange",main=NULL, nclass=15)
+#qqPlot(residuals(model_lasso), xlab="normal quantiles", ylab="residuals")
+```
+
+```{r}
+# Ridge Regression
+smodel2.cv = cv.glmnet(X_pred, HRtrain$Salary, alpha = 0, nfolds = 10)
+smodel2 = glmnet(X_pred, HRtrain$Salary, alpha = 0, nlambda=100)
+coef(smodel2, s = smodel2.cv$lambda.min)
+plot(smodel2,xvar="lambda",lwd=2) + abline(v=log(smodel2.cv$lambda.min),col="black",lty=2)
+model_ridge = glmnet(X_pred, HRtrain$Salary, alpha = 0,family="gaussian")
+summary(model_ridge)
+```
+
+Ridge Regression creates full model
+
+```{r}
+# Elastic Net Regresssion
+smodel3.cv = cv.glmnet(X_pred, HRtrain$Salary, alpha = 0.5, nfolds = 10)
+smodel3 = glmnet(X_pred, HRtrain$Salary, alpha = 0.5, nlambda=100)
+coef(smodel3, s = smodel3.cv$lambda.min)
+plot(smodel3,xvar="lambda",lwd=2) + abline(v=log(smodel3.cv$lambda.min),col="black",lty=2)
+```
+
+```{r}
+#Result of Elastic net
+model_net = lm(formula = Salary ~ PerfScoreID + Position + State + Age + EmployedYear + EmpSatisfaction + Absences, data = HRtrain)
+summary(model_net)
+```
+
+# Elastic net model assumptions test
+```{r}
+# Constant Variance / Uncorrelated errors
+plot(fitted(model_net),residuals(model_net),xlab="Fitted values",ylab="Residuals")
+abline(h=0, col="red")
+lines(lowess(model_net$fitted.values, residuals(model_net)), col='blue')
+
+# Normality
+hist(residuals(model_net), xlab="residuals", col="orange",main=NULL, nclass=15)
+qqPlot(residuals(model_net), xlab="normal quantiles", ylab="residuals")
+
+# Linearity
+resids_net = model_net$residuals
+ggplot(HRtrain, aes(x=PerfScoreID, resids_net)) + geom_point() + geom_smooth(method=lm, se=FALSE, fullrange=TRUE)
+ggplot(HRtrain, aes(x=Age, resids_net)) + geom_point() + geom_smooth(method=lm, se=FALSE, fullrange=TRUE)
+ggplot(HRtrain, aes(x=EmployedYear, resids_net)) + geom_point() + geom_smooth(method=lm, se=FALSE, fullrange=TRUE)
+ggplot(HRtrain, aes(x=EmpSatisfaction, resids_net)) + geom_point() + geom_smooth(method=lm, se=FALSE, fullrange=TRUE)
+ggplot(HRtrain, aes(x=Absences, resids_net)) + geom_point() + geom_smooth(method=lm, se=FALSE, fullrange=TRUE)
+```
+
+# Variable Selection Criteria
+```{r}
+model_position = lm(Salary~Position,data=HRtrain)
+n=nrow(HRtrain)
+
+no=c(
+  nrow(summary(model_full)$coefficients),
+  nrow(summary(model_backward)$coefficients),
+  nrow(summary(model_forward)$coefficients),
+  nrow(summary(model_lasso)$coefficients),
+  nrow(summary(model_net)$coefficients),
+    nrow(summary(model_position)$coefficients)
+)
+
+rsquared=c(
+  summary(model_full)$adj.r.squared,
+  summary(model_backward)$adj.r.squared,
+  summary(model_forward)$adj.r.squared,
+  summary(model_lasso)$adj.r.squared,
+  summary(model_net)$adj.r.squared,
+    summary(model_position)$adj.r.squared
+)
+
+cp=c(
+  Cp(model_full, S2= summary(model_full)$sigma^2),
+  Cp(model_backward, S2= summary(model_full)$sigma^2),
+  Cp(model_forward, S2= summary(model_full)$sigma^2),
+  Cp(model_lasso, S2= summary(model_full)$sigma^2),
+  Cp(model_net, S2= summary(model_full)$sigma^2),
+    Cp(model_position, S2= summary(model_full)$sigma^2)
+)
+aic=c(
+  AIC(model_full,k=2),
+  AIC(model_backward,k=2),
+  AIC(model_forward,k=2),
+  AIC(model_lasso,k=2),
+  AIC(model_net,k=2),
+    AIC(model_position,k=2)
+)
+bic=c(
+  AIC(model_full,k=log(n)),
+  AIC(model_backward,k=log(n)),
+  AIC(model_forward,k=log(n)),
+  AIC(model_lasso,k=log(n)),
+  AIC(model_net,k=log(n)),
+    AIC(model_position,k=log(n))
+)
+criteria = data.frame( "Number of Predictors"=no,"Adjusted R-Squared"=rsquared ,"Mellow Cp"=cp, AIC=aic, BIC=bic)
+row.names(criteria)=c("Full Model" , "Stepwise Backward", "Stepwise Forward", "Lasso", "Elastic Net","Position")
+criteria
+```
+
+#Prediction / Testing
+```{r}
+
+
+predfull = predict.lm(model_full,HRtest)
+predbackward = predict.lm(model_backward,HRtest)
+predforward = predict.lm(model_forward,HRtest)
+predlasso = predict.lm(model_lasso,HRtest)
+prednet = predict.lm(model_net,HRtest)
+predpos = predict.lm(model_position,HRtest)
+
+#MSPE
+MSPE=c(
+  mean( (HRtest$Salary - predfull)^2 ),
+  mean( (HRtest$Salary - predbackward)^2 ),
+  mean( (HRtest$Salary - predforward)^2 ),
+  mean( (HRtest$Salary - predlasso)^2 ),
+  mean( (HRtest$Salary - prednet)^2 ),
+  mean( (HRtest$Salary - predpos)^2 )
+)
+
+#MAE
+MAE=c(
+  mean( abs(HRtest$Salary - predfull) ),
+  mean( abs(HRtest$Salary - predbackward) ),
+  mean( abs(HRtest$Salary - predforward) ),
+  mean( abs(HRtest$Salary - predlasso) ),
+  mean( abs(HRtest$Salary - prednet) ),
+  mean( abs(HRtest$Salary - predpos) )
+)
+
+#MAPE
+MAPE=c(
+  mean( abs(HRtest$Salary - predfull)/ HRtest$Salary),
+  mean( abs(HRtest$Salary - predbackward)/ HRtest$Salary),
+  mean( abs(HRtest$Salary - predforward)/ HRtest$Salary),
+  mean( abs(HRtest$Salary - predlasso)/ HRtest$Salary),
+  mean( abs(HRtest$Salary - prednet)/ HRtest$Salary),
+  mean( abs(HRtest$Salary - predpos)/ HRtest$Salary)
+)
+
+#PM
+PM =c(
+  sum( (HRtest$Salary - predfull)^2 ) / sum( (HRtest$Salary - mean(HRtest$Salary) )^2 ),
+  sum( (HRtest$Salary - predbackward)^2 ) / sum( (HRtest$Salary - mean(HRtest$Salary) )^2 ),
+  sum( (HRtest$Salary - predforward)^2 ) / sum( (HRtest$Salary - mean(HRtest$Salary) )^2 ),
+  sum( (HRtest$Salary - predlasso)^2 ) / sum( (HRtest$Salary - mean(HRtest$Salary) )^2 ),
+  sum( (HRtest$Salary - prednet)^2 ) / sum( (HRtest$Salary - mean(HRtest$Salary) )^2 ),
+  sum( (HRtest$Salary - predpos)^2 ) / sum( (HRtest$Salary - mean(HRtest$Salary) )^2 )
+)
+
+performance = data.frame( MSPE=MSPE ,MAE=MAE, MAPE=MAPE, PM=PM)
+row.names(performance)=c("Full Model" , "Stepwise Backward", "Stepwise Forward", "Lasso", "Elastic Net","Position")
+performance
+```
+
+
+# Check Multicollinearity
+```{r}
+df <- data.frame(HRtrain$PerfScoreID, HRtrain$Age ,HRtrain$EmployedYear, HRtrain$EmpSatisfaction, HRtrain$Absences, HRtrain$Salary)
+cor(df)
+cat("VIF Threshold for model_net:", max(10, 1/(1-summary(model_net)$r.squared)), "\n")
+HRmulti<- HRtrain[-c(221),]
+model_multi= lm(formula = Salary ~  PerfScoreID + State + Position + Age + EmployedYear + EmpSatisfaction + Absences, data = HRmulti)
+summary(model_multi)
+summary(model_multi)$r.squared
+vif(model_multi)
+```
+
+# Outlier Analysis
+```{r}
+#Cook's Distance Analysis
+cook = cooks.distance(model_multi)
+#Rule of Thumb
+alarm = 4/nrow(HRtrain)
+plot(cook,type="h",lwd=3,col="red", ylab = "Cook's Distance")
+abline(h = alarm,col="red")  
+#Rule of Thumb
+alarm = 4/nrow(HRtrain)
+cat("Observation", which(cook>alarm), "has a cook's distance that is greater than", alarm)
+
+# Check Results from Outlier Removal
+HRtrain[201,]
+model_net_o = lm(formula = Salary ~ PerfScoreID + Position + State + Age + EmployedYear + EmpSatisfaction + Absences, data = HRtrain[-201,])
+summary(model_net)
+summary(model_net_o)
+```
